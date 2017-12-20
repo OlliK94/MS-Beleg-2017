@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.2"
+    ComputedModelVersion    "1.5"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -68,8 +68,8 @@ Model {
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
 	Extents			[750.0, 326.0]
-	ZoomFactor		[1.0]
-	Offset			[259.43749955296516, -44.499999791383743]
+	ZoomFactor		[0.8]
+	Offset			[188.75000907778735, -67.650000000000034]
       }
     }
   }
@@ -79,9 +79,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Oliver"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Dec 18 18:27:12 2017"
-  RTWModifiedTimeStamp	  435522423
-  ModelVersionFormat	  "1.%<AutoIncrement:2>"
+  LastModifiedDate	  "Wed Dec 20 18:44:19 2017"
+  RTWModifiedTimeStamp	  435696251
+  ModelVersionFormat	  "1.%<AutoIncrement:5>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -988,7 +988,7 @@ Model {
     TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "100"
+    ZoomFactor		    "80"
     ReportName		    "simulink-default.rpt"
     SIDHighWatermark	    "27"
     Block {
@@ -1049,6 +1049,7 @@ Model {
       SID		      "27"
       Position		      [905, 107, 935, 143]
       ZOrder		      17
+      CurrentSetting	      "0"
     }
     Block {
       BlockType		      SubSystem
@@ -1088,8 +1089,8 @@ Model {
 	  SID			  "24"
 	  Position		  [240, 112, 300, 148]
 	  ZOrder		  2
-	  Numerator		  "[1/42.6^2, 2*0.01/42.6, 1]"
-	  Denominator		  "[1/(11.6*1)^2, 2*(0.007*1)/(11.6*1), 1]"
+	  Numerator		  "[1/41.6^2, 2*0.01/41.6, 1]"
+	  Denominator		  "[1/(11.6*1)^2, 2*(0.01*1)/(11.6*1), 1]"
 	}
 	Block {
 	  BlockType		  TransferFcn
@@ -1097,7 +1098,7 @@ Model {
 	  SID			  "25"
 	  Position		  [365, 112, 425, 148]
 	  ZOrder		  3
-	  Denominator		  "[1/51.6^2, 2*0.006/51.6, 1]"
+	  Denominator		  "[1/51.6^2, 2*0.01/51.6, 1]"
 	}
 	Block {
 	  BlockType		  TransferFcn
@@ -1105,15 +1106,15 @@ Model {
 	  SID			  "26"
 	  Position		  [490, 112, 550, 148]
 	  ZOrder		  4
-	  Denominator		  "[1/201.6^2, 2*0.006/201.6, 1]"
+	  Denominator		  "[1/201.6^2, 2*0.01/201.6, 1]"
 	}
 	Block {
 	  BlockType		  Gain
 	  Name			  "V_P"
 	  SID			  "23"
-	  Position		  [125, 107, 195, 153]
+	  Position		  [140, 107, 185, 153]
 	  ZOrder		  1
-	  Gain			  "0.1225"
+	  Gain			  "0.1"
 	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
 	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
 	  SaturateOnIntegerOverflow off
@@ -1201,7 +1202,7 @@ Model {
 	  SID			  "12"
 	  Position		  [240, 89, 375, 131]
 	  ZOrder		  3
-	  Numerator		  "[1/5.8^2, 2*0.9/5.8, 1]"
+	  Numerator		  "[1/5.8^2, 2*0.4/5.8, 1]"
 	  Denominator		  "[1/58 1 0]"
 	}
 	Block {
@@ -1273,14 +1274,14 @@ Model {
       "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
       "ources','WiredSimulink',true,'DataLoggingLimitDataPoints',true,'DataLoggingSaveFormat','Array','DataLoggingDecim"
       "ation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',true,'SerializedDisplays"
-      "',{struct('MinYLimReal','-0.12499','MaxYLimReal','1.12487','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','"
-      "1.12487','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickCo"
+      "',{struct('MinYLimReal','-0.12498','MaxYLimReal','1.12483','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','"
+      "1.12483','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickCo"
       "lor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.074509803921"
       "5686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.074509803921"
       "5686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title"
       "','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'Manual "
-      "Switch2'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0.12499','MaxYLim"
-      "Real','1.12487','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','1.12487','LegendVisibility','off','XGrid',t"
+      "Switch2'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0.12498','MaxYLim"
+      "Real','1.12483','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','1.12483','LegendVisibility','off','XGrid',t"
       "rue,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0"
       ".686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.41176470588235"
       "3 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;"
