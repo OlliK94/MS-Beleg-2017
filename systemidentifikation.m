@@ -13,8 +13,9 @@ S_uu = fft(r_uu, NFFT)/L;
 S_uy = fft(r_uy, NFFT)/L;
 
 G = S_uy./S_uu;
-G = 2*abs(G(1:NFFT/2+1));
+G = abs(G(1:NFFT/2+1));
 f = fs/2*linspace(0, 1, NFFT/2+1);
 w = 2*pi*f;
 
-plot(w, 20*log10(G));
+i = find(w>800, 1);
+plot(w(1:i), 20*log10(G(1:i)));
